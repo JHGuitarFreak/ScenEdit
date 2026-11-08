@@ -47,6 +47,7 @@ namespace ScenEdit
 			Window.descText.Text  = Functions.ReadStr (Vars.scenDesc, 840);
 
 			LoadAlliance ();
+			LoadHierarchy ();
 
 			Stream.Close();
 			Stream.Dispose();

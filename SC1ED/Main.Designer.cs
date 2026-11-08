@@ -80,7 +80,7 @@ namespace ScenEdit
 			this.label16 = new System.Windows.Forms.Label();
 			this.destroyStarBaseHierarchyCB = new System.Windows.Forms.CheckBox();
 			this.label15 = new System.Windows.Forms.Label();
-			this.fleetCompositionHierarchyGB = new System.Windows.Forms.GroupBox();
+			this.fleetCompositionHierarchy = new System.Windows.Forms.GroupBox();
 			this.hierarchyShip7PointValue = new System.Windows.Forms.Label();
 			this.hierarchyShip6PointValue = new System.Windows.Forms.Label();
 			this.hierarchyShip5PointValue = new System.Windows.Forms.Label();
@@ -131,7 +131,7 @@ namespace ScenEdit
 			this.buyChenjesu = new System.Windows.Forms.CheckBox();
 			this.label31 = new System.Windows.Forms.Label();
 			this.toWinAlliance = new System.Windows.Forms.GroupBox();
-			this.destroyAllMinesAlliancecCB = new System.Windows.Forms.CheckBox();
+			this.destroyAllMinesAllianceCB = new System.Windows.Forms.CheckBox();
 			this.label32 = new System.Windows.Forms.Label();
 			this.destroyAllColoniesAllianceCB = new System.Windows.Forms.CheckBox();
 			this.label33 = new System.Windows.Forms.Label();
@@ -219,7 +219,7 @@ namespace ScenEdit
 			this.tabDevices.SuspendLayout();
 			this.availForPurchaseHierarchy.SuspendLayout();
 			this.toWinHierarchyGB.SuspendLayout();
-			this.fleetCompositionHierarchyGB.SuspendLayout();
+			this.fleetCompositionHierarchy.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.starBucksHierarchyNum)).BeginInit();
 			this.tabArtifacts.SuspendLayout();
 			this.availForPurchaseAlliance.SuspendLayout();
@@ -374,7 +374,7 @@ namespace ScenEdit
 			// 
 			this.tabDevices.Controls.Add(this.availForPurchaseHierarchy);
 			this.tabDevices.Controls.Add(this.toWinHierarchyGB);
-			this.tabDevices.Controls.Add(this.fleetCompositionHierarchyGB);
+			this.tabDevices.Controls.Add(this.fleetCompositionHierarchy);
 			this.tabDevices.Location = new System.Drawing.Point(4, 22);
 			this.tabDevices.Name = "tabDevices";
 			this.tabDevices.Size = new System.Drawing.Size(590, 535);
@@ -600,47 +600,47 @@ namespace ScenEdit
 			this.label15.TabIndex = 0;
 			this.label15.Text = "Destroy StarBase";
 			// 
-			// fleetCompositionHierarchyGB
+			// fleetCompositionHierarchy
 			// 
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyShip7PointValue);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyShip6PointValue);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyShip5PointValue);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyShip4PointValue);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyShip3PointValue);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyTotalPointValue);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyShip2PointValue);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyShip1PointValue);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShipDist7CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShipDist6CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShipDist5CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShipDist4CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShipDist3CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShipDist2CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShipDist1CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShip7CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShip6CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShip5CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShip4CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShip3CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShip2CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hiearchyShip1CB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label14);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label13);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label12);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label11);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label10);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label9);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label8);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.starBucksHierarchyNum);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label7);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.hierarchyStarBaseCB);
-			this.fleetCompositionHierarchyGB.Controls.Add(this.label6);
-			this.fleetCompositionHierarchyGB.Location = new System.Drawing.Point(8, 6);
-			this.fleetCompositionHierarchyGB.Name = "fleetCompositionHierarchyGB";
-			this.fleetCompositionHierarchyGB.Size = new System.Drawing.Size(572, 259);
-			this.fleetCompositionHierarchyGB.TabIndex = 0;
-			this.fleetCompositionHierarchyGB.TabStop = false;
-			this.fleetCompositionHierarchyGB.Text = "Fleet Composition";
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip7PointValue);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip6PointValue);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip5PointValue);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip4PointValue);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip3PointValue);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyTotalPointValue);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip2PointValue);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip1PointValue);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist7CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist6CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist5CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist4CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist3CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist2CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist1CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip7CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip6CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip5CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip4CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip3CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip2CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip1CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.label14);
+			this.fleetCompositionHierarchy.Controls.Add(this.label13);
+			this.fleetCompositionHierarchy.Controls.Add(this.label12);
+			this.fleetCompositionHierarchy.Controls.Add(this.label11);
+			this.fleetCompositionHierarchy.Controls.Add(this.label10);
+			this.fleetCompositionHierarchy.Controls.Add(this.label9);
+			this.fleetCompositionHierarchy.Controls.Add(this.label8);
+			this.fleetCompositionHierarchy.Controls.Add(this.starBucksHierarchyNum);
+			this.fleetCompositionHierarchy.Controls.Add(this.label7);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyStarBaseCB);
+			this.fleetCompositionHierarchy.Controls.Add(this.label6);
+			this.fleetCompositionHierarchy.Location = new System.Drawing.Point(8, 6);
+			this.fleetCompositionHierarchy.Name = "fleetCompositionHierarchy";
+			this.fleetCompositionHierarchy.Size = new System.Drawing.Size(572, 259);
+			this.fleetCompositionHierarchy.TabIndex = 0;
+			this.fleetCompositionHierarchy.TabStop = false;
+			this.fleetCompositionHierarchy.Text = "Fleet Composition";
 			// 
 			// hierarchyShip7PointValue
 			// 
@@ -1092,7 +1092,7 @@ namespace ScenEdit
 			// 
 			// toWinAlliance
 			// 
-			this.toWinAlliance.Controls.Add(this.destroyAllMinesAlliancecCB);
+			this.toWinAlliance.Controls.Add(this.destroyAllMinesAllianceCB);
 			this.toWinAlliance.Controls.Add(this.label32);
 			this.toWinAlliance.Controls.Add(this.destroyAllColoniesAllianceCB);
 			this.toWinAlliance.Controls.Add(this.label33);
@@ -1105,14 +1105,14 @@ namespace ScenEdit
 			this.toWinAlliance.TabStop = false;
 			this.toWinAlliance.Text = "To Win";
 			// 
-			// destroyAllMinesAlliancecCB
+			// destroyAllMinesAllianceCB
 			// 
-			this.destroyAllMinesAlliancecCB.AutoSize = true;
-			this.destroyAllMinesAlliancecCB.Location = new System.Drawing.Point(126, 60);
-			this.destroyAllMinesAlliancecCB.Name = "destroyAllMinesAlliancecCB";
-			this.destroyAllMinesAlliancecCB.Size = new System.Drawing.Size(15, 14);
-			this.destroyAllMinesAlliancecCB.TabIndex = 1;
-			this.destroyAllMinesAlliancecCB.UseVisualStyleBackColor = true;
+			this.destroyAllMinesAllianceCB.AutoSize = true;
+			this.destroyAllMinesAllianceCB.Location = new System.Drawing.Point(126, 60);
+			this.destroyAllMinesAllianceCB.Name = "destroyAllMinesAllianceCB";
+			this.destroyAllMinesAllianceCB.Size = new System.Drawing.Size(15, 14);
+			this.destroyAllMinesAllianceCB.TabIndex = 1;
+			this.destroyAllMinesAllianceCB.UseVisualStyleBackColor = true;
 			// 
 			// label32
 			// 
@@ -1928,8 +1928,8 @@ namespace ScenEdit
 			this.availForPurchaseHierarchy.PerformLayout();
 			this.toWinHierarchyGB.ResumeLayout(false);
 			this.toWinHierarchyGB.PerformLayout();
-			this.fleetCompositionHierarchyGB.ResumeLayout(false);
-			this.fleetCompositionHierarchyGB.PerformLayout();
+			this.fleetCompositionHierarchy.ResumeLayout(false);
+			this.fleetCompositionHierarchy.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.starBucksHierarchyNum)).EndInit();
 			this.tabArtifacts.ResumeLayout(false);
 			this.availForPurchaseAlliance.ResumeLayout(false);
@@ -1988,7 +1988,7 @@ namespace ScenEdit
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.CheckBox randEventsCheckbox;
         public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.GroupBox fleetCompositionHierarchyGB;
+        public System.Windows.Forms.GroupBox fleetCompositionHierarchy;
         public System.Windows.Forms.NumericUpDown starBucksHierarchyNum;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.CheckBox hierarchyStarBaseCB;
@@ -2052,7 +2052,7 @@ namespace ScenEdit
         public System.Windows.Forms.CheckBox buyChenjesu;
         public System.Windows.Forms.Label label31;
         public System.Windows.Forms.GroupBox toWinAlliance;
-        public System.Windows.Forms.CheckBox destroyAllMinesAlliancecCB;
+        public System.Windows.Forms.CheckBox destroyAllMinesAllianceCB;
         public System.Windows.Forms.Label label32;
         public System.Windows.Forms.CheckBox destroyAllColoniesAllianceCB;
         public System.Windows.Forms.Label label33;

@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LoadAlliance.cs" />
+    <Compile Include="LoadHierarchy.cs" />
     <Compile Include="Read.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>

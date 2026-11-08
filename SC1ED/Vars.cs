@@ -51,8 +51,8 @@ namespace ScenEdit
 		public const int hierarchyMineralStars    = 0x7A; // 1 byte
 		public const int hierarchyLifeStars       = 0x7B; // 1 byte
 		public const int hierarchyColonyStars     = 0x7C; // 1 byte
-		public const int hierarchyMineStars       = 0x7D; // 1 byte
-		public const int hierarchyFortColonyStars = 0x7E; // 1 byte
+		public const int hierarchyFortColonyStars = 0x7D; // 1 byte
+		public const int hierarchyMineStars       = 0x7E; // 1 byte
 		public const int hierarchyFortMineStars   = 0x7F; // 1 byte
 
 		public const int scenDesc                 = 0x80; // 840 bytes

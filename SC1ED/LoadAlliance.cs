@@ -42,7 +42,7 @@ namespace ScenEdit
 			Window.randEventsCheckbox.Checked           = (allianceBitMask & Vars.RandomEvents) == 0;
 			Window.destroyStarBaseAllianceCB.Checked    = (allianceBitMask & Vars.DestroyStarBase) != 0;
 			Window.destroyAllColoniesAllianceCB.Checked = (allianceBitMask & Vars.DestroyColonies) != 0;
-			Window.destroyAllMinesAlliancecCB.Checked   = (allianceBitMask & Vars.DestroyMines) != 0;
+			Window.destroyAllMinesAllianceCB.Checked    = (allianceBitMask & Vars.DestroyMines) != 0;
 
 			Window.starBucksAllianceNum.Value = Functions.ReadShort (Vars.allianceStarBucks);
 
