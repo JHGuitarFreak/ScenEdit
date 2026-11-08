@@ -42,7 +42,7 @@ namespace ScenEdit
 			FileBuffer = new byte[FileSize];    // create buffer
 			Window = window;
 
-			LoadData.LoadIt ();
+			LoadIt ();
 
 			Stream.Close();
 			Stream.Dispose();

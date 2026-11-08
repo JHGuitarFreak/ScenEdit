@@ -15,18 +15,32 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 using System;
+using System.IO;
+using System.Text;
+using System.Threading;
+using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ScenEdit
 {
-	internal class LoadData
+	partial class Read
 	{
 		public static void LoadIt()
 		{
+			Stream.Seek(Vars.scenTitle, SeekOrigin.Begin);
+			Stream.Read(FileBuffer, 0, 16);
+			Window.titleText.Text = Encoding.UTF8.GetString(FileBuffer);
 
+			Stream.Seek(Vars.scenBlurb, SeekOrigin.Begin);
+			Stream.Read(FileBuffer, 0, 60);
+			Window.blurbText.Text = Encoding.UTF8.GetString(FileBuffer);
+
+
+
+			Stream.Seek(Vars.scenDesc, SeekOrigin.Begin);
+			Stream.Read(FileBuffer, 0, 840);
+			Window.descText.Text = Encoding.UTF8.GetString(FileBuffer);
 		}
 	}
 }

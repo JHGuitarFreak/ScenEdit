@@ -23,6 +23,18 @@ namespace ScenEdit
 {
 	class Vars
 	{
+		public byte HexCode { get; private set; }
+		public string Text { get; private set; }
 
+		public const byte scenTitle = 0x00;
+		public const byte scenBlurb = 0x10;
+		public const byte scenDesc  = 0x80;
+
+		public static string[] firstMove = { "Alliance", "Hierarchy" };
+		public static string[] shipDistances = { "Near", "Intermediate", "Far", "Anywhere" };
+		public static string[] hierarchyShips = { "- None -", "Ur-Quan", "Mycon", "Spathi", "Androsynth", "VUX", "Ilwrath", "Umgah" };
+		public static int[] hierarchyShipPoints = { 0, 30, 23, 18, 15, 12, 10, 7 };
+		public static string[] allianceShips = { "- None -", "Chenjesu", "Yehat", "Mmrnmhrm", "Arilou", "Syreen", "Earthling", "Shofixti" };
+		public static int[] allianceShipPoints = { 0, 26, 23, 19, 16, 12, 9, 5 };
 	}
 }

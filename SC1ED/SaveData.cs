@@ -22,7 +22,7 @@ using System.Threading.Tasks;
 
 namespace ScenEdit
 {
-	internal class SaveData
+	partial class Write
 	{
 		public static void SaveIt()
 		{
