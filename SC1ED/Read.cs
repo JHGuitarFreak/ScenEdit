@@ -42,7 +42,9 @@ namespace ScenEdit
 			FileBuffer = new byte[FileSize];    // create buffer
 			Window = window;
 
-			LoadIt ();
+			Window.titleText.Text = Functions.ReadStr (Vars.scenTitle, 16);
+			Window.blurbText.Text = Functions.ReadStr (Vars.scenBlurb, 60);
+			Window.descText.Text  = Functions.ReadStr (Vars.scenDesc, 840);
 
 			Stream.Close();
 			Stream.Dispose();
