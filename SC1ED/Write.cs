@@ -38,7 +38,12 @@ namespace ScenEdit
 			FileBuffer = new byte[FileSize];    // create buffer
 			Window = WindowRef;
 
-			// Save It!
+			Functions.WriteString (Vars.scenTitle, Window.titleText.Text, 16);
+			Functions.WriteString (Vars.scenBlurb, Window.blurbText.Text, 60);
+			Functions.WriteString (Vars.scenDesc, Window.descText.Text, 840);
+
+			SaveAlliance ();
+			SaveHierarchy ();
 
 			Stream.Close();
 			Stream.Dispose();

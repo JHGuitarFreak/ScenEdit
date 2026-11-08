@@ -107,6 +107,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SaveAlliance.cs" />
+    <Compile Include="SaveHierarchy.cs" />
     <Compile Include="Vars.cs" />
     <Compile Include="Write.cs" />
   </ItemGroup>
