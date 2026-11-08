@@ -96,13 +96,13 @@ namespace ScenEdit
 			this.hiearchyShipDist3CB = new System.Windows.Forms.ComboBox();
 			this.hiearchyShipDist2CB = new System.Windows.Forms.ComboBox();
 			this.hiearchyShipDist1CB = new System.Windows.Forms.ComboBox();
-			this.hiearchyShip7CB = new System.Windows.Forms.ComboBox();
-			this.hiearchyShip6CB = new System.Windows.Forms.ComboBox();
-			this.hiearchyShip5CB = new System.Windows.Forms.ComboBox();
-			this.hiearchyShip4CB = new System.Windows.Forms.ComboBox();
-			this.hiearchyShip3CB = new System.Windows.Forms.ComboBox();
-			this.hiearchyShip2CB = new System.Windows.Forms.ComboBox();
-			this.hiearchyShip1CB = new System.Windows.Forms.ComboBox();
+			this.hierarchyShip7CB = new System.Windows.Forms.ComboBox();
+			this.hierarchyShip6CB = new System.Windows.Forms.ComboBox();
+			this.hierarchyShip5CB = new System.Windows.Forms.ComboBox();
+			this.hierarchyShip4CB = new System.Windows.Forms.ComboBox();
+			this.hierarchyShip3CB = new System.Windows.Forms.ComboBox();
+			this.hierarchyShip2CB = new System.Windows.Forms.ComboBox();
+			this.hierarchyShip1CB = new System.Windows.Forms.ComboBox();
 			this.label14 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
@@ -617,13 +617,13 @@ namespace ScenEdit
 			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist3CB);
 			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist2CB);
 			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShipDist1CB);
-			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip7CB);
-			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip6CB);
-			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip5CB);
-			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip4CB);
-			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip3CB);
-			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip2CB);
-			this.fleetCompositionHierarchy.Controls.Add(this.hiearchyShip1CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip7CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip6CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip5CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip4CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip3CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip2CB);
+			this.fleetCompositionHierarchy.Controls.Add(this.hierarchyShip1CB);
 			this.fleetCompositionHierarchy.Controls.Add(this.label14);
 			this.fleetCompositionHierarchy.Controls.Add(this.label13);
 			this.fleetCompositionHierarchy.Controls.Add(this.label12);
@@ -692,9 +692,9 @@ namespace ScenEdit
 			this.hierarchyTotalPointValue.AutoSize = true;
 			this.hierarchyTotalPointValue.Location = new System.Drawing.Point(459, 149);
 			this.hierarchyTotalPointValue.Name = "hierarchyTotalPointValue";
-			this.hierarchyTotalPointValue.Size = new System.Drawing.Size(63, 13);
+			this.hierarchyTotalPointValue.Size = new System.Drawing.Size(40, 13);
 			this.hierarchyTotalPointValue.TabIndex = 13;
-			this.hierarchyTotalPointValue.Text = "Placeholder";
+			this.hierarchyTotalPointValue.Text = "Total 0";
 			// 
 			// hierarchyShip2PointValue
 			// 
@@ -772,59 +772,66 @@ namespace ScenEdit
 			// 
 			// hiearchyShip7CB
 			// 
-			this.hiearchyShip7CB.FormattingEnabled = true;
-			this.hiearchyShip7CB.Location = new System.Drawing.Point(82, 227);
-			this.hiearchyShip7CB.Name = "hiearchyShip7CB";
-			this.hiearchyShip7CB.Size = new System.Drawing.Size(121, 21);
-			this.hiearchyShip7CB.TabIndex = 5;
+			this.hierarchyShip7CB.FormattingEnabled = true;
+			this.hierarchyShip7CB.Location = new System.Drawing.Point(82, 227);
+			this.hierarchyShip7CB.Name = "hiearchyShip7CB";
+			this.hierarchyShip7CB.Size = new System.Drawing.Size(121, 21);
+			this.hierarchyShip7CB.TabIndex = 5;
+			this.hierarchyShip7CB.SelectedIndexChanged += new System.EventHandler(this.HierarchyShip_SelectedIndexChanged);
 			// 
 			// hiearchyShip6CB
 			// 
-			this.hiearchyShip6CB.FormattingEnabled = true;
-			this.hiearchyShip6CB.Location = new System.Drawing.Point(82, 200);
-			this.hiearchyShip6CB.Name = "hiearchyShip6CB";
-			this.hiearchyShip6CB.Size = new System.Drawing.Size(121, 21);
-			this.hiearchyShip6CB.TabIndex = 5;
+			this.hierarchyShip6CB.FormattingEnabled = true;
+			this.hierarchyShip6CB.Location = new System.Drawing.Point(82, 200);
+			this.hierarchyShip6CB.Name = "hiearchyShip6CB";
+			this.hierarchyShip6CB.Size = new System.Drawing.Size(121, 21);
+			this.hierarchyShip6CB.TabIndex = 5;
+			this.hierarchyShip6CB.SelectedIndexChanged += new System.EventHandler(this.HierarchyShip_SelectedIndexChanged);
 			// 
 			// hiearchyShip5CB
 			// 
-			this.hiearchyShip5CB.FormattingEnabled = true;
-			this.hiearchyShip5CB.Location = new System.Drawing.Point(82, 173);
-			this.hiearchyShip5CB.Name = "hiearchyShip5CB";
-			this.hiearchyShip5CB.Size = new System.Drawing.Size(121, 21);
-			this.hiearchyShip5CB.TabIndex = 5;
+			this.hierarchyShip5CB.FormattingEnabled = true;
+			this.hierarchyShip5CB.Location = new System.Drawing.Point(82, 173);
+			this.hierarchyShip5CB.Name = "hiearchyShip5CB";
+			this.hierarchyShip5CB.Size = new System.Drawing.Size(121, 21);
+			this.hierarchyShip5CB.TabIndex = 5;
+			this.hierarchyShip5CB.SelectedIndexChanged += new System.EventHandler(this.HierarchyShip_SelectedIndexChanged);
 			// 
 			// hiearchyShip4CB
 			// 
-			this.hiearchyShip4CB.FormattingEnabled = true;
-			this.hiearchyShip4CB.Location = new System.Drawing.Point(82, 146);
-			this.hiearchyShip4CB.Name = "hiearchyShip4CB";
-			this.hiearchyShip4CB.Size = new System.Drawing.Size(121, 21);
-			this.hiearchyShip4CB.TabIndex = 5;
+			this.hierarchyShip4CB.FormattingEnabled = true;
+			this.hierarchyShip4CB.Location = new System.Drawing.Point(82, 146);
+			this.hierarchyShip4CB.Name = "hiearchyShip4CB";
+			this.hierarchyShip4CB.Size = new System.Drawing.Size(121, 21);
+			this.hierarchyShip4CB.TabIndex = 5;
+			this.hierarchyShip4CB.SelectedIndexChanged += new System.EventHandler(this.HierarchyShip_SelectedIndexChanged);
 			// 
 			// hiearchyShip3CB
 			// 
-			this.hiearchyShip3CB.FormattingEnabled = true;
-			this.hiearchyShip3CB.Location = new System.Drawing.Point(82, 119);
-			this.hiearchyShip3CB.Name = "hiearchyShip3CB";
-			this.hiearchyShip3CB.Size = new System.Drawing.Size(121, 21);
-			this.hiearchyShip3CB.TabIndex = 5;
+			this.hierarchyShip3CB.FormattingEnabled = true;
+			this.hierarchyShip3CB.Location = new System.Drawing.Point(82, 119);
+			this.hierarchyShip3CB.Name = "hiearchyShip3CB";
+			this.hierarchyShip3CB.Size = new System.Drawing.Size(121, 21);
+			this.hierarchyShip3CB.TabIndex = 5;
+			this.hierarchyShip3CB.SelectedIndexChanged += new System.EventHandler(this.HierarchyShip_SelectedIndexChanged);
 			// 
 			// hiearchyShip2CB
 			// 
-			this.hiearchyShip2CB.FormattingEnabled = true;
-			this.hiearchyShip2CB.Location = new System.Drawing.Point(82, 92);
-			this.hiearchyShip2CB.Name = "hiearchyShip2CB";
-			this.hiearchyShip2CB.Size = new System.Drawing.Size(121, 21);
-			this.hiearchyShip2CB.TabIndex = 5;
+			this.hierarchyShip2CB.FormattingEnabled = true;
+			this.hierarchyShip2CB.Location = new System.Drawing.Point(82, 92);
+			this.hierarchyShip2CB.Name = "hiearchyShip2CB";
+			this.hierarchyShip2CB.Size = new System.Drawing.Size(121, 21);
+			this.hierarchyShip2CB.TabIndex = 5;
+			this.hierarchyShip2CB.SelectedIndexChanged += new System.EventHandler(this.HierarchyShip_SelectedIndexChanged);
 			// 
 			// hiearchyShip1CB
 			// 
-			this.hiearchyShip1CB.FormattingEnabled = true;
-			this.hiearchyShip1CB.Location = new System.Drawing.Point(82, 65);
-			this.hiearchyShip1CB.Name = "hiearchyShip1CB";
-			this.hiearchyShip1CB.Size = new System.Drawing.Size(121, 21);
-			this.hiearchyShip1CB.TabIndex = 5;
+			this.hierarchyShip1CB.FormattingEnabled = true;
+			this.hierarchyShip1CB.Location = new System.Drawing.Point(82, 65);
+			this.hierarchyShip1CB.Name = "hiearchyShip1CB";
+			this.hierarchyShip1CB.Size = new System.Drawing.Size(121, 21);
+			this.hierarchyShip1CB.TabIndex = 5;
+			this.hierarchyShip1CB.SelectedIndexChanged += new System.EventHandler(this.HierarchyShip_SelectedIndexChanged);
 			// 
 			// label14
 			// 
@@ -1343,6 +1350,7 @@ namespace ScenEdit
 			this.allianceShip7CB.Name = "allianceShip7CB";
 			this.allianceShip7CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShip7CB.TabIndex = 5;
+			this.allianceShip7CB.SelectedIndexChanged += new System.EventHandler (this.AllianceShip_SelectedIndexChanged);
 			// 
 			// allianceShip6CB
 			// 
@@ -1351,6 +1359,7 @@ namespace ScenEdit
 			this.allianceShip6CB.Name = "allianceShip6CB";
 			this.allianceShip6CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShip6CB.TabIndex = 5;
+			this.allianceShip6CB.SelectedIndexChanged += new System.EventHandler (this.AllianceShip_SelectedIndexChanged);
 			// 
 			// allianceShip5CB
 			// 
@@ -1359,6 +1368,7 @@ namespace ScenEdit
 			this.allianceShip5CB.Name = "allianceShip5CB";
 			this.allianceShip5CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShip5CB.TabIndex = 5;
+			this.allianceShip5CB.SelectedIndexChanged += new System.EventHandler (this.AllianceShip_SelectedIndexChanged);
 			// 
 			// allianceShip4CB
 			// 
@@ -1367,6 +1377,7 @@ namespace ScenEdit
 			this.allianceShip4CB.Name = "allianceShip4CB";
 			this.allianceShip4CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShip4CB.TabIndex = 5;
+			this.allianceShip4CB.SelectedIndexChanged += new System.EventHandler (this.AllianceShip_SelectedIndexChanged);
 			// 
 			// allianceShip3CB
 			// 
@@ -1375,6 +1386,7 @@ namespace ScenEdit
 			this.allianceShip3CB.Name = "allianceShip3CB";
 			this.allianceShip3CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShip3CB.TabIndex = 5;
+			this.allianceShip3CB.SelectedIndexChanged += new System.EventHandler (this.AllianceShip_SelectedIndexChanged);
 			// 
 			// allianceShip2CB
 			// 
@@ -1383,6 +1395,7 @@ namespace ScenEdit
 			this.allianceShip2CB.Name = "allianceShip2CB";
 			this.allianceShip2CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShip2CB.TabIndex = 5;
+			this.allianceShip2CB.SelectedIndexChanged += new System.EventHandler (this.AllianceShip_SelectedIndexChanged);
 			// 
 			// allianceShip1CB
 			// 
@@ -1391,6 +1404,7 @@ namespace ScenEdit
 			this.allianceShip1CB.Name = "allianceShip1CB";
 			this.allianceShip1CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShip1CB.TabIndex = 5;
+			this.allianceShip1CB.SelectedIndexChanged += new System.EventHandler (this.AllianceShip_SelectedIndexChanged);
 			// 
 			// label35
 			// 
@@ -1580,6 +1594,7 @@ namespace ScenEdit
 			this.allianceTotalStars.Size = new System.Drawing.Size(63, 13);
 			this.allianceTotalStars.TabIndex = 2;
 			this.allianceTotalStars.Text = "Placeholder";
+			this.allianceTotalStars.TextChanged += new System.EventHandler (this.TotalStars_TextChanged);
 			// 
 			// label60
 			// 
@@ -1650,6 +1665,7 @@ namespace ScenEdit
 			this.fortMineAllianceStars.Name = "fortMineAllianceStars";
 			this.fortMineAllianceStars.Size = new System.Drawing.Size(120, 20);
 			this.fortMineAllianceStars.TabIndex = 0;
+			this.fortMineAllianceStars.ValueChanged += new System.EventHandler (this.AllianceStars_ValueChanged);
 			// 
 			// fortColonyAllianceStars
 			// 
@@ -1657,6 +1673,7 @@ namespace ScenEdit
 			this.fortColonyAllianceStars.Name = "fortColonyAllianceStars";
 			this.fortColonyAllianceStars.Size = new System.Drawing.Size(120, 20);
 			this.fortColonyAllianceStars.TabIndex = 0;
+			this.fortColonyAllianceStars.ValueChanged += new System.EventHandler (this.AllianceStars_ValueChanged);
 			// 
 			// mineAllianceStars
 			// 
@@ -1664,6 +1681,7 @@ namespace ScenEdit
 			this.mineAllianceStars.Name = "mineAllianceStars";
 			this.mineAllianceStars.Size = new System.Drawing.Size(120, 20);
 			this.mineAllianceStars.TabIndex = 0;
+			this.mineAllianceStars.ValueChanged += new System.EventHandler (this.AllianceStars_ValueChanged);
 			// 
 			// colonyAllianceStars
 			// 
@@ -1671,6 +1689,7 @@ namespace ScenEdit
 			this.colonyAllianceStars.Name = "colonyAllianceStars";
 			this.colonyAllianceStars.Size = new System.Drawing.Size(120, 20);
 			this.colonyAllianceStars.TabIndex = 0;
+			this.colonyAllianceStars.ValueChanged += new System.EventHandler (this.AllianceStars_ValueChanged);
 			// 
 			// lifeAllianceStars
 			// 
@@ -1678,6 +1697,7 @@ namespace ScenEdit
 			this.lifeAllianceStars.Name = "lifeAllianceStars";
 			this.lifeAllianceStars.Size = new System.Drawing.Size(120, 20);
 			this.lifeAllianceStars.TabIndex = 0;
+			this.lifeAllianceStars.ValueChanged += new System.EventHandler (this.AllianceStars_ValueChanged);
 			// 
 			// mineralAllianceStars
 			// 
@@ -1685,6 +1705,7 @@ namespace ScenEdit
 			this.mineralAllianceStars.Name = "mineralAllianceStars";
 			this.mineralAllianceStars.Size = new System.Drawing.Size(120, 20);
 			this.mineralAllianceStars.TabIndex = 0;
+			this.mineralAllianceStars.ValueChanged += new System.EventHandler (this.AllianceStars_ValueChanged);
 			// 
 			// deadAllianceStars
 			// 
@@ -1692,6 +1713,7 @@ namespace ScenEdit
 			this.deadAllianceStars.Name = "deadAllianceStars";
 			this.deadAllianceStars.Size = new System.Drawing.Size(120, 20);
 			this.deadAllianceStars.TabIndex = 0;
+			this.deadAllianceStars.ValueChanged += new System.EventHandler (this.AllianceStars_ValueChanged);
 			// 
 			// starsInHierarchyHemisphere
 			// 
@@ -1736,6 +1758,7 @@ namespace ScenEdit
 			this.hierarchyTotalStars.Size = new System.Drawing.Size(63, 13);
 			this.hierarchyTotalStars.TabIndex = 2;
 			this.hierarchyTotalStars.Text = "Placeholder";
+			this.hierarchyTotalStars.TextChanged += new System.EventHandler (this.TotalStars_TextChanged);
 			// 
 			// label58
 			// 
@@ -1806,6 +1829,7 @@ namespace ScenEdit
 			this.fortMineHierarchyStars.Name = "fortMineHierarchyStars";
 			this.fortMineHierarchyStars.Size = new System.Drawing.Size(120, 20);
 			this.fortMineHierarchyStars.TabIndex = 0;
+			this.fortMineHierarchyStars.ValueChanged += new System.EventHandler (this.HierarchyStars_ValueChanged);
 			// 
 			// fortColonyHierarchyStars
 			// 
@@ -1813,6 +1837,7 @@ namespace ScenEdit
 			this.fortColonyHierarchyStars.Name = "fortColonyHierarchyStars";
 			this.fortColonyHierarchyStars.Size = new System.Drawing.Size(120, 20);
 			this.fortColonyHierarchyStars.TabIndex = 0;
+			this.fortColonyHierarchyStars.ValueChanged += new System.EventHandler (this.HierarchyStars_ValueChanged);
 			// 
 			// mineHierarchyStars
 			// 
@@ -1820,6 +1845,7 @@ namespace ScenEdit
 			this.mineHierarchyStars.Name = "mineHierarchyStars";
 			this.mineHierarchyStars.Size = new System.Drawing.Size(120, 20);
 			this.mineHierarchyStars.TabIndex = 0;
+			this.mineHierarchyStars.ValueChanged += new System.EventHandler (this.HierarchyStars_ValueChanged);
 			// 
 			// colonyHierarchyStars
 			// 
@@ -1827,6 +1853,7 @@ namespace ScenEdit
 			this.colonyHierarchyStars.Name = "colonyHierarchyStars";
 			this.colonyHierarchyStars.Size = new System.Drawing.Size(120, 20);
 			this.colonyHierarchyStars.TabIndex = 0;
+			this.colonyHierarchyStars.ValueChanged += new System.EventHandler (this.HierarchyStars_ValueChanged);
 			// 
 			// lifeHierarchyStars
 			// 
@@ -1834,6 +1861,7 @@ namespace ScenEdit
 			this.lifeHierarchyStars.Name = "lifeHierarchyStars";
 			this.lifeHierarchyStars.Size = new System.Drawing.Size(120, 20);
 			this.lifeHierarchyStars.TabIndex = 0;
+			this.lifeHierarchyStars.ValueChanged += new System.EventHandler (this.HierarchyStars_ValueChanged);
 			// 
 			// mineralHierarchyStars
 			// 
@@ -1841,6 +1869,7 @@ namespace ScenEdit
 			this.mineralHierarchyStars.Name = "mineralHierarchyStars";
 			this.mineralHierarchyStars.Size = new System.Drawing.Size(120, 20);
 			this.mineralHierarchyStars.TabIndex = 0;
+			this.mineralHierarchyStars.ValueChanged += new System.EventHandler (this.HierarchyStars_ValueChanged);
 			// 
 			// deadHierarchyStars
 			// 
@@ -1848,6 +1877,7 @@ namespace ScenEdit
 			this.deadHierarchyStars.Name = "deadHierarchyStars";
 			this.deadHierarchyStars.Size = new System.Drawing.Size(120, 20);
 			this.deadHierarchyStars.TabIndex = 0;
+			this.deadHierarchyStars.ValueChanged += new System.EventHandler (this.HierarchyStars_ValueChanged);
 			// 
 			// toolStrip1
 			// 
@@ -1993,7 +2023,7 @@ namespace ScenEdit
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.CheckBox hierarchyStarBaseCB;
         public System.Windows.Forms.Label label6;
-        public System.Windows.Forms.ComboBox hiearchyShip1CB;
+        public System.Windows.Forms.ComboBox hierarchyShip1CB;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label14;
         public System.Windows.Forms.Label label13;
@@ -2001,12 +2031,12 @@ namespace ScenEdit
         public System.Windows.Forms.Label label11;
         public System.Windows.Forms.Label label10;
         public System.Windows.Forms.Label label9;
-        public System.Windows.Forms.ComboBox hiearchyShip7CB;
-        public System.Windows.Forms.ComboBox hiearchyShip6CB;
-        public System.Windows.Forms.ComboBox hiearchyShip5CB;
-        public System.Windows.Forms.ComboBox hiearchyShip4CB;
-        public System.Windows.Forms.ComboBox hiearchyShip3CB;
-        public System.Windows.Forms.ComboBox hiearchyShip2CB;
+        public System.Windows.Forms.ComboBox hierarchyShip7CB;
+        public System.Windows.Forms.ComboBox hierarchyShip6CB;
+        public System.Windows.Forms.ComboBox hierarchyShip5CB;
+        public System.Windows.Forms.ComboBox hierarchyShip4CB;
+        public System.Windows.Forms.ComboBox hierarchyShip3CB;
+        public System.Windows.Forms.ComboBox hierarchyShip2CB;
         public System.Windows.Forms.ComboBox hiearchyShipDist7CB;
         public System.Windows.Forms.ComboBox hiearchyShipDist6CB;
         public System.Windows.Forms.ComboBox hiearchyShipDist5CB;
