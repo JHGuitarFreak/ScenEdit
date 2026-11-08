@@ -46,6 +46,8 @@ namespace ScenEdit
 			Window.blurbText.Text = Functions.ReadStr (Vars.scenBlurb, 60);
 			Window.descText.Text  = Functions.ReadStr (Vars.scenDesc, 840);
 
+			LoadAlliance ();
+
 			Stream.Close();
 			Stream.Dispose();
 		}

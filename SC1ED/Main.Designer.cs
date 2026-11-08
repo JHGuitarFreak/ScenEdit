@@ -637,7 +637,7 @@ namespace ScenEdit
 			this.fleetCompositionHierarchyGB.Controls.Add(this.label6);
 			this.fleetCompositionHierarchyGB.Location = new System.Drawing.Point(8, 6);
 			this.fleetCompositionHierarchyGB.Name = "fleetCompositionHierarchyGB";
-			this.fleetCompositionHierarchyGB.Size = new System.Drawing.Size(576, 259);
+			this.fleetCompositionHierarchyGB.Size = new System.Drawing.Size(572, 259);
 			this.fleetCompositionHierarchyGB.TabIndex = 0;
 			this.fleetCompositionHierarchyGB.TabStop = false;
 			this.fleetCompositionHierarchyGB.Text = "Fleet Composition";
@@ -1196,7 +1196,7 @@ namespace ScenEdit
 			this.fleetCompositionAlliance.Controls.Add(this.label43);
 			this.fleetCompositionAlliance.Location = new System.Drawing.Point(8, 6);
 			this.fleetCompositionAlliance.Name = "fleetCompositionAlliance";
-			this.fleetCompositionAlliance.Size = new System.Drawing.Size(576, 259);
+			this.fleetCompositionAlliance.Size = new System.Drawing.Size(572, 259);
 			this.fleetCompositionAlliance.TabIndex = 3;
 			this.fleetCompositionAlliance.TabStop = false;
 			this.fleetCompositionAlliance.Text = "Fleet Composition";
@@ -1277,6 +1277,7 @@ namespace ScenEdit
 			// 
 			this.allianceShipDist7CB.FormattingEnabled = true;
 			this.allianceShipDist7CB.Location = new System.Drawing.Point(209, 227);
+			this.allianceShipDist7CB.MaxDropDownItems = 4;
 			this.allianceShipDist7CB.Name = "allianceShipDist7CB";
 			this.allianceShipDist7CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShipDist7CB.TabIndex = 6;
@@ -1285,6 +1286,7 @@ namespace ScenEdit
 			// 
 			this.allianceShipDist6CB.FormattingEnabled = true;
 			this.allianceShipDist6CB.Location = new System.Drawing.Point(209, 200);
+			this.allianceShipDist6CB.MaxDropDownItems = 4;
 			this.allianceShipDist6CB.Name = "allianceShipDist6CB";
 			this.allianceShipDist6CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShipDist6CB.TabIndex = 6;
@@ -1293,6 +1295,7 @@ namespace ScenEdit
 			// 
 			this.allianceShipDist5CB.FormattingEnabled = true;
 			this.allianceShipDist5CB.Location = new System.Drawing.Point(209, 173);
+			this.allianceShipDist5CB.MaxDropDownItems = 4;
 			this.allianceShipDist5CB.Name = "allianceShipDist5CB";
 			this.allianceShipDist5CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShipDist5CB.TabIndex = 6;
@@ -1301,6 +1304,7 @@ namespace ScenEdit
 			// 
 			this.allianceShipDist4CB.FormattingEnabled = true;
 			this.allianceShipDist4CB.Location = new System.Drawing.Point(209, 146);
+			this.allianceShipDist4CB.MaxDropDownItems = 4;
 			this.allianceShipDist4CB.Name = "allianceShipDist4CB";
 			this.allianceShipDist4CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShipDist4CB.TabIndex = 6;
@@ -1309,6 +1313,7 @@ namespace ScenEdit
 			// 
 			this.allianceShipDist3CB.FormattingEnabled = true;
 			this.allianceShipDist3CB.Location = new System.Drawing.Point(209, 119);
+			this.allianceShipDist3CB.MaxDropDownItems = 4;
 			this.allianceShipDist3CB.Name = "allianceShipDist3CB";
 			this.allianceShipDist3CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShipDist3CB.TabIndex = 6;
@@ -1317,6 +1322,7 @@ namespace ScenEdit
 			// 
 			this.allianceShipDist2CB.FormattingEnabled = true;
 			this.allianceShipDist2CB.Location = new System.Drawing.Point(209, 92);
+			this.allianceShipDist2CB.MaxDropDownItems = 4;
 			this.allianceShipDist2CB.Name = "allianceShipDist2CB";
 			this.allianceShipDist2CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShipDist2CB.TabIndex = 6;
@@ -1325,6 +1331,7 @@ namespace ScenEdit
 			// 
 			this.allianceShipDist1CB.FormattingEnabled = true;
 			this.allianceShipDist1CB.Location = new System.Drawing.Point(209, 65);
+			this.allianceShipDist1CB.MaxDropDownItems = 4;
 			this.allianceShipDist1CB.Name = "allianceShipDist1CB";
 			this.allianceShipDist1CB.Size = new System.Drawing.Size(121, 21);
 			this.allianceShipDist1CB.TabIndex = 6;
@@ -1505,7 +1512,7 @@ namespace ScenEdit
 			// label59
 			// 
 			this.label59.AutoSize = true;
-			this.label59.Location = new System.Drawing.Point(369, 495);
+			this.label59.Location = new System.Drawing.Point(369, 491);
 			this.label59.Name = "label59";
 			this.label59.Size = new System.Drawing.Size(58, 13);
 			this.label59.TabIndex = 2;
@@ -1514,7 +1521,7 @@ namespace ScenEdit
 			// label69
 			// 
 			this.label69.AutoSize = true;
-			this.label69.Location = new System.Drawing.Point(14, 495);
+			this.label69.Location = new System.Drawing.Point(14, 491);
 			this.label69.Name = "label69";
 			this.label69.Size = new System.Drawing.Size(120, 13);
 			this.label69.TabIndex = 2;
@@ -1523,7 +1530,7 @@ namespace ScenEdit
 			// totalStars
 			// 
 			this.totalStars.AutoSize = true;
-			this.totalStars.Location = new System.Drawing.Point(433, 495);
+			this.totalStars.Location = new System.Drawing.Point(433, 491);
 			this.totalStars.Name = "totalStars";
 			this.totalStars.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.totalStars.Size = new System.Drawing.Size(63, 13);
@@ -1548,7 +1555,7 @@ namespace ScenEdit
 			this.starsInAllianceHemisphere.Controls.Add(this.lifeAllianceStars);
 			this.starsInAllianceHemisphere.Controls.Add(this.mineralAllianceStars);
 			this.starsInAllianceHemisphere.Controls.Add(this.deadAllianceStars);
-			this.starsInAllianceHemisphere.Location = new System.Drawing.Point(8, 264);
+			this.starsInAllianceHemisphere.Location = new System.Drawing.Point(8, 260);
 			this.starsInAllianceHemisphere.Name = "starsInAllianceHemisphere";
 			this.starsInAllianceHemisphere.Size = new System.Drawing.Size(572, 205);
 			this.starsInAllianceHemisphere.TabIndex = 1;
@@ -1704,7 +1711,7 @@ namespace ScenEdit
 			this.starsInHierarchyHemisphere.Controls.Add(this.lifeHierarchyStars);
 			this.starsInHierarchyHemisphere.Controls.Add(this.mineralHierarchyStars);
 			this.starsInHierarchyHemisphere.Controls.Add(this.deadHierarchyStars);
-			this.starsInHierarchyHemisphere.Location = new System.Drawing.Point(8, 54);
+			this.starsInHierarchyHemisphere.Location = new System.Drawing.Point(8, 50);
 			this.starsInHierarchyHemisphere.Name = "starsInHierarchyHemisphere";
 			this.starsInHierarchyHemisphere.Size = new System.Drawing.Size(572, 204);
 			this.starsInHierarchyHemisphere.TabIndex = 0;
